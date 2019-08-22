@@ -384,7 +384,7 @@ void health_storage_info_t::report() {
     });
 
     if (!ret.isOk()) {
-        LOG_TO(SYSTEM, ERROR) << "getStorageInfo failed with " << ret.description();
+        LOG_TO(SYSTEM, DEBUG) << "getStorageInfo failed with " << ret.description();
     }
 }
 
